@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 100vh;
+}
+body .header-content {
+  position: fixed;
+  top: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #19456B;
+  height: 4rem;
+  width: 100%;
+}
+body .header-content .img-log {
+  margin-top: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  margin-left: 1.5rem;
+  border-radius: 8px;
+  background-image: url("../img/logo.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .header-content .search {
+  margin-left: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .header-content .search .search-bar {
+  font-size: medium;
+  margin-top: 1rem;
+  width: 25rem;
+  height: 2rem;
+  border-radius: 8px;
+  outline: none;
+  padding: 2px 15px;
+}
+body .header-content .search i {
+  position: relative;
+  bottom: 1.75rem;
+  font-size: large;
+}
+body .header-content .nav-bar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rem;
+  width: 30rem;
+  justify-content: space-between;
+}
+body .header-content .nav-bar .menu-icon {
+  margin-top: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: end;
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+}
+body .header-content .nav-bar div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+body .header-content .nav-bar div .link {
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  font-size: large;
+  text-decoration: none;
+  color: white;
+}
+body .shop {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #F8F1F1;
+}
+body .shop .table {
+  border-collapse: collapse;
+  color: black;
+  margin-left: 20rem;
+  width: 60%;
+}
+body .shop .table thead tr .th {
+  padding: 0.5rem;
+  background-color: #11698e;
+}
+body .shop .table tbody tr:hover {
+  background-color: #e6dada;
+}
+body .shop .table tbody tr .td {
+  height: 2rem;
+  padding: 0.5rem;
+}
+body .shop .table tbody tr .td input {
+  width: 2rem;
+}
+body .shop .table tbody tr .td .btn {
+  background: none;
+  border: none;
+}
+body .shop .table tbody tr .td .btn .bx {
+  font-size: large;
+  color: black;
+  background: none;
+  border: none;
+}
+body .shop .table tbody tr .td .btn {
+  background-color: rgb(238, 77, 28);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  height: 1.5rem;
+  width: 3.5rem;
+}
+body .shop .table tbody tr .td .btn-update {
+  background-color: rgb(69, 69, 236);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  height: 1.5rem;
+  width: 3.5rem;
+}
+body .shop .pay-btn {
+  margin-top: 1rem;
+  margin-left: 22rem;
+}
+body .shop .pay-btn .proced-pay {
+  background-color: rgb(57, 179, 57);
+  color: white;
+  border-radius: 5px;
+  font-size: large;
+  height: 2.5rem;
+  width: 5rem;
+  border: none;
+  cursor: pointer;
+}
+body .shop .pay-btn .proced-pay:hover {
+  background-color: #16C79A;
+}
+body .Billing {
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+  height: 60vh;
+  width: 70%;
+  display: none;
+  flex-direction: column;
+  padding: 0.5rem;
+  border: solid;
+  margin-left: 10rem;
+  border-color: #11698e;
+}
+body .Billing .close {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  margin-left: 97%;
+  background: none;
+  border: none;
+  color: red;
+}
+body .Billing .close:hover {
+  background-color: red;
+  color: white;
+}
+body .Billing .close .bx {
+  font-size: x-large;
+  font-weight: 700;
+}
+body .Billing .container {
+  border-color: #11698e;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-top: 0.5rem;
+  height: 100%;
+}
+body .Billing .fill-info {
+  border-color: #11698e;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+body .Billing .fill-info label {
+  font-size: larger;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .Billing .fill-info input {
+  width: 10rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+body .Billing .order {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px;
+  padding: 1rem;
+  width: 40%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+body .Billing .order .table {
+  height: -moz-fit-content;
+  height: fit-content;
+  border-collapse: collapse;
+  width: 15rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+body .Billing .order .table th {
+  color: white;
+  background-color: #11698e;
+}
+body .Billing .order .table tr:hover {
+  background-color: #e6dada;
+}
+body .Billing .order .payment-method {
+  display: flex;
+  flex-direction: column;
+  color: #11698e;
+}
+body .Billing .order .payment-method .telebirr {
+  margin-bottom: 1rem;
+  font-size: medium;
+  font-weight: 600;
+}
+body .Billing .order .payment-method .payment {
+  height: 2.5rem;
+  background-color: #19456B;
+  color: white;
+  border-radius: 4px;
+  font-size: medium;
+}
+body .Billing .order .payment-method .payment:hover {
+  background-color: #11698e;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 11rem;
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-right: 13rem;
+}
+footer .first-col h3 {
+  margin-bottom: 1rem;
+}
+footer .first-col p {
+  margin-bottom: 1rem;
+  color: brown;
+}
+footer .second-col h3 {
+  margin-bottom: 1rem;
+}
+footer .second-col p {
+  margin-bottom: 1rem;
+  color: brown;
+}
+footer .third-col h3 {
+  margin-bottom: 1rem;
+}
+footer .third-col p {
+  margin-bottom: 1rem;
+  color: brown;
+}/*# sourceMappingURL=shopping.css.map */
